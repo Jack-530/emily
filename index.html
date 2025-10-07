@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Resumen Fedora Linux</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#3b82f6;--text:#e6eef8}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background: linear-gradient(180deg,#071226 0%, #071728 60%);color:var(--text)}
+    .container{max-width:900px;margin:28px auto;padding:20px}
+    header{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+    .logo{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,#1f6feb,#7dd3fc);display:flex;align-items:center;justify-content:center;font-weight:700;color:#02203a}
+    h1{margin:0;font-size:26px}
+    p.lead{opacity:0.95}
+    .card{background:rgba(255,255,255,0.03);border-radius:12px;padding:16px;margin:12px 0;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    ul{margin:8px 0 8px 20px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:8px;border-bottom:1px solid rgba(255,255,255,0.04);text-align:left}
+    th{font-weight:700}
+    .small{font-size:13px;opacity:0.9}
+    .center{display:flex;gap:8px;align-items:center}
+    .btn{background:var(--accent);color:#04112a;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    footer{opacity:0.9;margin-top:18px;font-size:13px}
+    @media (max-width:720px){.grid{grid-template-columns:1fr}}
+    /* print */
+    @media print{body{background:white;color:#000} .card{background:#fff;box-shadow:none} .logo{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"></div>
+      <div>
+        <h1>Resumen: Fedora Linux</h1>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2> Introducción</h2>
+      <p><strong>Fedora Linux</strong>, un sistema operativo libre, moderno y seguro. Fedora es como una gran computadora mágica que todos pueden usar, mejorar y compartir. Nació en <strong>2003</strong> y la apoya <strong>Red Hat</strong>.</p>
+    </section>
+
+    <section class="card">
+      <h2> Enfoque</h2>
+      <ul>
+        <li><strong>Innovación:</strong> trae lo más nuevo del mundo Linux.</li>
+        <li><strong>Seguridad:</strong> protege la compu con sistemas como SELinux.</li>
+        <li><strong>Libertad:</strong> promueve software libre y abierto.</li>
+      </ul>
+      <p class="small">Objetivo: ofrecer un sistema moderno y confiable para desarrolladores, estudiantes.</p>
+    </section>
+
+    <section class="card">
+      <h2> Características principales</h2>
+      <ol>
+        <li><strong>Libre y gratuito</strong></li>
+        <li><strong>Código abierto</strong></li>
+        <li><strong>Alta seguridad</strong> (SELinux)</li>
+        <li><strong>Actualizaciones frecuentes</strong> (cada 6 meses)</li>
+        <li><strong>Paquetes .rpm y gestor DNF</strong></li>
+        <li><strong>Soporte Flatpak</strong></li>
+        <li><strong>Estabilidad</strong> a pesar de usar software reciente</li>
+        <li><strong>GNOME</strong> por defecto (se puede cambiar)</li>
+        <li><strong>Filosofía libre</strong></li>
+        <li><strong>Base para RHEL</strong></li>
+      </ol>
+    </section>
+
+    <section class="card grid">
+      <div>
+        <h2>Ediciones (de más a menos importante)</h2>
+        <ol>
+          <li><strong>Workstation</strong> — para computadoras de escritorio y notebooks (la más usada).</li>
+          <li><strong>Server</strong> — para servidores y redes.</li>
+          <li><strong>Cloud / CoreOS</strong> — para contenedores y la nube.</li>
+          <li><strong>IoT</strong> — para dispositivos conectados (sensores, robots).</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Versiones (vieja → nueva)</h2>
+        <p class="small">Primera: <strong>Fedora Core 1</strong> (noviembre 2003). Última: <strong>Fedora 41</strong> (2025). Total: <strong>41 versiones</strong>.</p>
+        <p class="small">Fedora publica versiones cada ~6 meses; cada versión trae mejoras de rendimiento y compatibilidad.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2> Lo que hace especial a Fedora (resumen)</h2>
+      <ul>
+        <li>Colaboración entre comunidad y Red Hat: libertad + calidad.</li>
+        <li>Siempre a la vanguardia con kernels y software nuevos.</li>
+        <li>Buena estabilidad para trabajo y estudio.</li>
+        <li>Defiende el software libre y abierto.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2> Comparación con otras distribuciones</h2>
+      <table>
+        <thead>
+          <tr><th>Distribución</th><th>Similaridad</th><th>Diferencia</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ubuntu</td><td>Moderna y fácil</td><td>Fedora usa .rpm; Ubuntu usa .deb. Fedora es más "pura" libre.</td></tr>
+          <tr><td>Debian</td><td>Estable y segura</td><td>Debian actualiza más lento; Fedora es más reciente.</td></tr>
+          <tr><td>Arch Linux</td><td>Tiene software reciente</td><td>Arch es Rolling y más técnico; Fedora es más accesible.</td></tr>
+          <tr><td>RHEL</td><td>RHEL proviene de Fedora</td><td>Fedora es experimental y gratis; RHEL es pago y empresarial.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Lo malo de Fedora</h2>
+      <ol>
+        <li>Actualizaciones frecuentes → puede pedir más mantenimiento.</li>
+        <li>Algunos controladores o códecs no están por defecto (drivers NVIDIA u códecs multimedia requieren repos extras).</li>
+        <li>No es la más amigable para principiantes absolutos.</li>
+        <li>Al usar software nuevo, a veces aparecen pequeños fallos.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2> Resumen final (para el oral)</h2>
+      <p class="small">Fedora es una distribución moderna, libre y segura creada en 2003 con apoyo de Red Hat. Se enfoca en innovación, seguridad y libertad. Ideal para aprender, programar y experimentar. Tiene varias ediciones según el uso y publica versiones cada 6 meses.</p>
+      <div class="center" style="margin-top:10px">
+        <a class="btn" href="#" onclick="window.print();return false;">Imprimir / Guardar PDF</a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
